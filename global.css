@@ -1,0 +1,10 @@
+:root{
+    --black: #222831;
+    --dark-grey: #30475e;
+    --grey-yellow: #f2a365;
+    --grey:  #ececec;
+}
+body{
+    background-color: var(--black);
+    font-family: 'Montserrat', 'open-sans';
+}
