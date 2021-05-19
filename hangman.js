@@ -1,8 +1,8 @@
 
 
 // window.alert("Хариултаа Latin буюу Англиар бичнэ үү.")
-let questions = ['Амьд бие амьсгалахад юу хэрэгтэй вэ?', 'Нартай хамгийн ойрхон гараг?', 'Нарны аймгийн хамгийн том гараг?', 'Хэдэн Celsium д ус буцалдаг вэ?', 'True эс үгүй бол False, Дуу агаарт усанд тархдагаас илүү хурдан тархдаг.'];
-let answers = ['oxygen', 'mercury', 'jupiter', '100', 'false'];
+let questions = ['Монгол улсын төв цэг хаана оршдог вэ?', 'Хүний биеийн хэдэн хувийг ус эзэлдэг вэ?', 'Монгол улс хэдэн аймагтай вэ?', 'Шилийг юунаас гаргаж авдаг вэ?', 'Дэлхий хэдэн градус хазайж эргэдэг вэ?'];
+let answers = ['Өвөрхангай', '70', '21', 'Элс', '23.5'];
 let timer = document.querySelector('.timer-text');
 let questionDOM = document.querySelector('.question');
 let answer = document.querySelector("#answer");
@@ -11,7 +11,7 @@ let questionNum = 0;
 let answerNum = 0;
 let correct = 0;
 let incorrect = 0;
-let time = 10;
+let time = 11;
 let interval;
 
 function hangmanStart() {
@@ -26,7 +26,7 @@ function hangmanStart() {
     questionNum = 0;
     questionDOM.innerText = questions[questionNum];
     incorrect = 0;
-    window.alert("Хариугаа Latin буюу Англиар бичнэ үү.");
+    window.alert("Хариугаа Монголоор болон тоогоор бичнэ үү.");
     Timer();
 }
 
@@ -65,7 +65,7 @@ function changeQuestion() {
             correct = 0;
         }
         else{
-            alert("Мэдлэггүй юм байна.");
+            alert("Хожигдлоо.");
         }
     }
     switch (incorrect) {
